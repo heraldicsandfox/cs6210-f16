@@ -41,7 +41,7 @@ idiom is to use the elementwise multiplication operation, i.e.
   y = diag(d) * x;  % Bad -- O(n^2) time and intermediate storage
   y = d .* x;  % Good -- equivalent, but O(n) time and space
 \end{lstlisting}
-To multiply a diagonal matrix by a vector in \matlab, use the {\tt bsxfun}
+To multiply a diagonal matrix by a matrix in \matlab, use the {\tt bsxfun}
 command, e.g.
 \begin{lstlisting}
   B = diag(d) * A;  % Bad -- left scaling in O(n^3) time
